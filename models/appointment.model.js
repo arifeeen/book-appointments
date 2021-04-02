@@ -1,6 +1,10 @@
 const mongoose = require('mongoose');
 const appointment = mongoose.model('appointment', {
-    name: {
+    firstName: {
+        type: String,
+        required: true
+    },
+    lastName: {
         type: String,
         required: true
     },
@@ -11,6 +15,10 @@ const appointment = mongoose.model('appointment', {
     date: {
         type: String,
         required:true
+    },
+    time: {
+        type: String,
+        required: true
     }
 });
 
